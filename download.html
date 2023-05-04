@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body style="background-image: url('0.jpg');" >
+
+<h2>DOWNLOAD
+<audio id="myAudio">
+
+  <source src="a5.mp3" type="audio/mpeg">
+
+</audio> 
+<button onclick="playAudio()" type="button"><i class='fa fa-headphones' style='font-size:24px'></i></button>
+
+</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#FFE4C4;">
+    
+<a href="jj.jpg" download>
+  <img src="jj.jpg" alt="jj" width="200" height="160">
+  <p>RESUME</p>
+</a> 
+  </div>
+  <div class="column" style="background-color:#FFEBCD;">
+    
+<a href="dd.jpg" download>
+  <img src="dd.jpg" alt="dd" width="200" height="160">
+  <p>TIMETABLE</p>
+</a> 
+  
+</div>
+
+</body>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+}
+</script>
+</html>

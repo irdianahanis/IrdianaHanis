@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+:root{
+	--background: #BDB76B;
+	--white: #fff;
+	--one: #c3266f;
+	--two: #743578;
+	--black: #54585d;
+	--process: #a5a5a5;
+}
+*{margin:0px; padding:0px; box-sizing: border-box; font-family: system-ui;}
+body{background: var(--background);}
+.col-div-3{width: 25%; float: left;}
+.col-div-7{width: 75%; float: left;}
+.col-div-4{width: 35%; float: left;}
+.col-div-8{width: 65%; float: left;}
+.col-div-6{width: 50%; float: left; position: relative;}
+.clearfix{clear: both;}
+.resume-main{width: 700px; height: 800px; 
+	background:#BDB76B (var(--one));
+	margin: 50px auto;
+	box-shadow:5px 5px 5px 5px #54585d33;
+}
+.left-box{width: 35%; float: left; height: 700px;}
+.right-box{width: 65%; float: left; height: 700px;
+	margin: 50px 0px; padding:30px 50px;
+	}
+.profile{width: 150px; height: 150px; 
+	padding: 7px; border-radius: 50%; margin: 20px auto;}
+.profile img{width: 100%; border-radius: 50%;height: 90%}
+.content-box{    padding: 0px 40px 0px 45px;}
+.content-box h2{text-transform: uppercase;font-weight: 500;color: var(--white); 
+	letter-spacing: 1px; font-size: 20px;}
+.hr1{border: none; height: 1px; background: var(--white); margin-top: 3px;}
+.p1{font-size: 11px;color: var(--white);letter-spacing: 1px;padding-top: 12px;}
+#progress {background: var(--process);border-radius: 13px;height: 8px;width: 100%;}
+#progress:after {
+    content: '';
+    display: block;
+    background: var(--white);
+    width: 50%;
+    height: 100%;
+    border-radius: 9px;
+}
+#progress1 {background: var(--process);border-radius: 13px;height: 8px;width: 100%;}
+#progress1:after {
+    content: '';
+    display: block;
+    background: var(--white);
+    width: 40%;
+    height: 100%;
+    border-radius: 9px;
+}
+.content-box h3{font-size: 13px;text-transform: uppercase;letter-spacing: 1px;padding-top: 10px;
+    color: white;font-weight: 500;
+}
+.p2{font-size: 13px; margin-bottom: 5px; margin-top: 5px; color: var(--white);}
+.circle{color:var(--white); font-size: 14px!important; margin-top: 7px;}
+.circle1{color:var(--process); font-size: 14px!important; margin-top: 7px;}
+.in{background:var(--white);color: var(--one);padding: 8px;border-radius: 20px; font-size: 14px!important;} 
+.inp{color: var(--white); font-size: 11px;}
+.col3{text-align: center;}
+h1{font-size: 50px; text-transform: uppercase; color: var(--black); line-height: 50px;}
+h1 span{color: var(--one);}
+.p3{letter-spacing: 4px;color: #54585d; font-weight: 500;}
+.heading{text-transform: uppercase;font-weight: 500;color: var(--one); 
+	letter-spacing: 1px; font-size: 20px;}
+.hr2{border: none; height: 1px; background: var(--black); margin-top: 3px;}
+.p5{font-weight: 700;color: var(--black);}
+.span1{font-size: 12px;color: var(--black);}
+</style>
+<body  >
+
+<div class="resume-main">
+	<div class="left-box">
+		<br><br>
+		<div class="profile">
+			<img src="bb.jpg">
+		</div>
+		<div class="content-box">
+		<h2>Profile Info</h2>
+		<hr class="hr1">
+		<p class="p1">My name is Irdiana Hanis Binti Baharuddin.I live in Seri Iskandar Perak.I am 21 years old.. </p>
+
+		<h3>Language:</h3>
+		<p class="p2">Malay</p>
+		<div id="progress"></div>
+		<p class="p2">English</p>
+		<div id="progress1"></div>
+
+		<br><br>
+		<h2>My Skills</h2>
+		<hr class="hr1">
+		<br>
+		<div class="col-div-6"><p class="p2">HTML</p></div>
+		<div class="col-div-6">
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle1"></i>
+			<i class="fa fa-circle circle1"></i>
+		</div>
+			<div class="clearfix"></div>
+		<div class="col-div-6"><p class="p2">CSS</p></div>
+		<div class="col-div-6">
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle1"></i>
+		</div>
+		
+			<div class="clearfix"></div>
+			<br>
+			<h2>interests</h2>
+			<hr class="hr1">
+			<br>
+			<div class="col-div-3 col3">
+				<i class="fa fa-futbol-o in"></i>
+				<span class="inp">Sports</span>
+			</div>
+			<div class="col-div-3 col3">
+				<i class="fa fa-futbol-o in"></i>
+				<span class="inp">Drive</span>
+			</div>
+			<div class="col-div-3 col3">
+				<i class="fa fa-futbol-o in"></i>
+				<span class="inp">Sports</span>
+			</div>
+			<div class="col-div-3 col3">
+				<i class="fa fa-futbol-o in"></i>
+				<span class="inp">Sports</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="right-box">
+		<h1>
+			IRDIANA<br>
+			<span>HANIS</span>
+			 <audio id="myAudio">
+
+  <source src="a4.mp3" type="audio/mpeg">
+
+</audio> 
+<button onclick="playAudio()" type="button"><i class='fa fa-headphones' style='font-size:24px'></i></button>
+
+		</h1>
+		
+
+		<br>	
+		<h2 class="heading">Work Experience</h2>
+		<hr class="hr2">
+		<br>
+		<div class="col-div-4">
+			<p class="p5">2021-2022</p>
+			<span class="span1">I city SDN.BHD</span>
+		</div>
+		<div class="col-div-8">
+			<p class="p5">Part Timer</p>
+			<span class="span1">I work as a part timer during my first year of study.</span>
+		</div>
+		<div class="clearfix"></div>
+		<br>
+		<div class="col-div-4">
+			<p class="p5">2022 - 2023</p>
+			<span class="span1">MR DIY</span>
+		</div>
+		<div class="col-div-8">
+			<p class="p5">Part time  Promoter</p>
+			<span class="span1">I work as a part timer during my second  year of study .</span>
+		</div>
+		
+		<div class="clearfix"></div>
+
+		<br>	
+		<h2 class="heading">My Education</h2>
+		<hr class="hr2">
+		<br>
+		<div class="col-div-4">
+			<p class="p5">2020-2021/p>
+			<span class="span1">Kolej Matrikuasi Perak </span>
+		</div>
+		<div class="col-div-8">
+			<p class="p5">Matriks</p>
+			<span class="span1">I study in Matrikulasi in science course about 1 year.</span>
+		</div>
+		<div class="clearfix"></div>
+		<br>
+		<div class="col-div-4">
+			<p class="p5">2021-2025</p>
+			<span class="span1"UITM SHAH ALAM</span>
+		</div>
+		<div class="col-div-8">
+			<p class="p5">Bachelor in Netcentric Computing</p>
+			<span class="span1"> I study degree in uitm shah alama .</span>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="clearfix"></div>
+
+</div>
+
+</body>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+}
+</script>
+</html>

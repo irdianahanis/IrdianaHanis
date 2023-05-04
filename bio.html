@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:#E9967A;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: #EEE8AA;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #E9967A;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Biography</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      
+      <li><img src="i.jpg" width="200"height="200"></li>
+      <hr>
+      <li><h2>my picture</h2></li>
+      <hr>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Myself</h1>
+    <p>My name is Irdiana hanis binti Baharuddin. I live in Bandar Seri Iskandar, Perak. I am 21 years old. I am pursuing my studies in the field of netcentric computing at uitm Shah Alam. I'm also the family's second kid. I am highly interested in the topic of food because I believe that the variety of food accessible now is quite distinctive and diversified. Since high school, I've been aware of this curiosity..</p>
+   
+  </article>
+</section>
+
+<footer>
+  <p>@all copyright by irdiana hanis</p>
+</footer>
+
+</body>
+</html>
+

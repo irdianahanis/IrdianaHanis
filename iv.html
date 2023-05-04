@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Allison' rel='stylesheet'>
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFEBCD;
+}
+
+.topnav a {
+  float: left;
+  color: #DEB887;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #E9967A;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #E9967A;
+  color: white;
+}
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+</style>
+</head>
+<body>
+<h1 style="background-color:#EEE8AA ;">
+
+
+<div class="topnav">
+  <img src="logo.jpg" alt="logo" width="122" height="122">
+  <a class="active" href="#home">Home</a>
+  <a href="bio.html">Biography</a>
+  <a href="resume.html">Resume</a>
+  <a href="timetable.html">TimeTable</a>
+  <a href="gallery.html">Galleries</a> 
+  <a href="download.html">Download</a>
+  <a href="link.html">Links</a>
+  <a href="login.html">Login</a>
+  <a style="padding-right:200px" href="#Logout">Logout</a>
+</div>
+
+<div>
+<a href="https://instagram.com/irdiana__?igshid=YmMyMTA2M2Y="><i style="padding-left:1100px" class="fa fa-instagram"></i></a>
+<a href="https://www.facebook.com/settings?tab=account&section=username"><i style="padding-left:30px" class="fa fa-facebook"></i></a>
+<h2 style="border: 3px solid Violet;"><center>DD'S PAGE</center></h2>  
+<audio id="myAudio">
+
+  <source src="a2.mp3" type="audio/mpeg">
+
+</audio> 
+<button onclick="playAudio()" type="button"><i class='fa fa-headphones' style='font-size:24px'></i></button>
+
+</div>
+<section  class="slideshow-container">
+  <img class="mySlides fade" src="bg.jpg" style="width:100%">
+  <img class="mySlides fade" src="jojo.jpg" style="width:100%">
+  <span style="text-align:center" class="dot"></span> 
+  <span style="text-align:center" class="dot"></span> 
+  <span style="text-align:center" class="dot"></span> 
+</section>
+ 
+ <script>
+ let slideIndex = 0;
+ showSlides();
+ function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+}
+ </script>
+ 
+  
+</body>
+</html>
+ 
